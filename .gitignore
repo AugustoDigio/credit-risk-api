@@ -1,0 +1,6 @@
+venv/
+node_modules/
+__pycache__/
+*.db
+.ipynb_checkpoints/
+data/loans_model_features.csv

@@ -1,0 +1,122 @@
+{
+  "columnas": [
+    "Credit Score",
+    "Annual Income",
+    "Years of Credit History",
+    "Number of Open Accounts",
+    "Number of Credit Problems",
+    "Bankruptcies",
+    "ratio_prestamo_ingreso",
+    "ratio_deuda_ingreso_mensual",
+    "datos_imputados",
+    "Purpose_Buy House",
+    "Purpose_Buy a Car",
+    "Purpose_Debt Consolidation",
+    "Purpose_Educational Expenses",
+    "Purpose_Home Improvements",
+    "Purpose_Medical Bills",
+    "Purpose_Other",
+    "Purpose_Take a Trip",
+    "Purpose_major_purchase",
+    "Purpose_moving",
+    "Purpose_other",
+    "Purpose_renewable_energy",
+    "Purpose_small_business",
+    "Purpose_vacation",
+    "Purpose_wedding",
+    "Term_Short Term",
+    "Home Ownership_Own Home",
+    "Home Ownership_Rent",
+    "Years in current job_10+ years",
+    "Years in current job_2 years",
+    "Years in current job_3 years",
+    "Years in current job_4 years",
+    "Years in current job_5 years",
+    "Years in current job_6 years",
+    "Years in current job_7 years",
+    "Years in current job_8 years",
+    "Years in current job_9 years",
+    "Years in current job_< 1 year",
+    "Years in current job_Unknown"
+  ],
+  "mediana_credit_score": 729.0,
+  "mediana_annual_income": 1168975.0,
+  "cortes": {
+    "bajo_max": 0.2,
+    "medio_max": 0.3
+  },
+  "default_historico": {
+    "Bajo": 0.133,
+    "Medio": 0.245,
+    "Alto": 0.395
+  },
+  "categorias": {
+    "Purpose": [
+      "Business Loan",
+      "Buy House",
+      "Buy a Car",
+      "Debt Consolidation",
+      "Educational Expenses",
+      "Home Improvements",
+      "Medical Bills",
+      "Other",
+      "Take a Trip",
+      "major_purchase",
+      "moving",
+      "other",
+      "renewable_energy",
+      "small_business",
+      "vacation",
+      "wedding"
+    ],
+    "Term": [
+      "Long Term",
+      "Short Term"
+    ],
+    "Home Ownership": [
+      "Home Mortgage",
+      "Own Home",
+      "Rent"
+    ],
+    "Years in current job": [
+      "1 year",
+      "10+ years",
+      "2 years",
+      "3 years",
+      "4 years",
+      "5 years",
+      "6 years",
+      "7 years",
+      "8 years",
+      "9 years",
+      "< 1 year",
+      "Unknown"
+    ]
+  },
+  "rangos": {
+    "Credit Score": {
+      "p1": 627.0,
+      "p99": 750.0
+    },
+    "Annual Income": {
+      "p1": 370639.84,
+      "p99": 4200730.520000002
+    },
+    "Years of Credit History": {
+      "p1": 6.5,
+      "p99": 40.3
+    },
+    "Number of Open Accounts": {
+      "p1": 3.0,
+      "p99": 27.0
+    },
+    "ratio_prestamo_ingreso": {
+      "p1": 0.033,
+      "p99": 0.644
+    },
+    "ratio_deuda_ingreso_mensual": {
+      "p1": 0.014,
+      "p99": 0.41616000000000347
+    }
+  }
+}

@@ -1,0 +1,192 @@
+:root {
+  --fondo: #0d1421;
+  --panel: #131c2e;
+  --borde: #263249;
+  --texto: #e8edf5;
+  --texto-suave: #9aa8bf;
+  --verde: #2ecc71;
+  --celeste: #3498db;
+  --ambar: #f39c12;
+  --rojo: #e74c3c;
+  color-scheme: dark;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: var(--texto);
+  background: var(--fondo);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.pagina {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+header h1 {
+  margin: 0 0 4px;
+  font-size: 1.8rem;
+}
+
+header p {
+  margin: 0;
+  color: var(--texto-suave);
+}
+
+.contenido {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 24px;
+  margin-top: 28px;
+  align-items: start;
+}
+
+@media (max-width: 800px) {
+  .contenido {
+    grid-template-columns: 1fr;
+  }
+}
+
+form,
+aside>div {
+  background: var(--panel);
+  border: 1px solid var(--borde);
+  padding: 20px;
+}
+
+h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--verde);
+  margin: 24px 0 12px;
+}
+
+h2:first-child {
+  margin-top: 0;
+}
+
+.campos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 560px) {
+  .campos {
+    grid-template-columns: 1fr;
+  }
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--texto-suave);
+}
+
+input,
+select {
+  background: var(--fondo);
+  color: var(--texto);
+  border: 1px solid var(--borde);
+  padding: 9px 10px;
+  font-size: 0.95rem;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid var(--celeste);
+  outline-offset: -1px;
+}
+
+small {
+  display: block;
+  margin-top: 8px;
+  color: var(--texto-suave);
+  font-size: 0.75rem;
+}
+
+button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 12px;
+  background: var(--verde);
+  color: #0d1421;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.aviso ul { margin: 6px 0 0; padding-left: 18px; }
+
+.resultado {
+  border-left: 4px solid var(--borde);
+  padding: 4px 0 4px 16px;
+  margin-bottom: 20px;
+}
+
+.resultado p {
+  margin: 6px 0;
+}
+
+.etiqueta {
+  color: var(--texto-suave);
+  font-size: 0.8rem;
+}
+
+.nivel {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.nivel-bajo {
+  border-color: var(--verde);
+}
+
+.nivel-bajo .nivel {
+  color: var(--verde);
+}
+
+.nivel-medio {
+  border-color: var(--ambar);
+}
+
+.nivel-medio .nivel {
+  color: var(--ambar);
+}
+
+.nivel-alto {
+  border-color: var(--rojo);
+}
+
+.nivel-alto .nivel {
+  color: var(--rojo);
+}
+
+.error {
+  color: var(--rojo);
+}
+
+.aviso {
+  color: var(--ambar);
+  font-size: 0.85rem;
+}
+
+.nota {
+  color: var(--texto-suave);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
