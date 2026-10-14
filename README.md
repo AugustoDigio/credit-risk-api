@@ -4,8 +4,6 @@ Modelo de Machine Learning que estima el nivel de riesgo de un préstamo (**Bajo
 
 Es la segunda parte de un proyecto de análisis de riesgo crediticio: en [el análisis previo](https://github.com/AugustoDigio/bank-loan-risk-analysis) limpié y exploré los datos, y acá doy el paso de *describir* lo que pasó a *estimar* qué puede pasar con un préstamo nuevo.
 
-**🔗 Demo en vivo:** *(pegar acá la URL del frontend)* La demo corre en un plan de hosting gratuito: si estuvo inactiva, el primer pedido puede tardar cerca de un minuto en responder.
-
    ![Interfaz](docs/captura.png)
 
 ---
