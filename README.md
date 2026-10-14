@@ -156,7 +156,7 @@ credit-risk-api/
 
 ├── requirements.txt             \# dependencias de la API, con versiones fijas
 
-├── .python-version              \# versión de Python usada en el despliegue
+├── .python-version              # versión de Python del proyecto
 
 └── README.md
 
@@ -191,18 +191,6 @@ npm install
 npm run dev
 
 La interfaz queda en `http://localhost:5173` y, por defecto, apunta a la API local (`http://127.0.0.1:8000`).
-
----
-
-## ☁️ Despliegue
-
-- **API (FastAPI \+ modelo):** servicio web en Render, plan gratuito. Comando de inicio: `uvicorn main:app --app-dir api --host 0.0.0.0 --port $PORT`.  
-- **Interfaz:** sitio estático en Render (directorio `frontend`, build con `npm install && npm run build`, publicación de `dist`).
-
-| Variable de entorno | Dónde | Para qué |
-| :---- | :---- | :---- |
-| `VITE_API_URL` | Frontend | URL pública de la API, sin barra final. Se aplica al construir el sitio. |
-| `ALLOWED_ORIGINS` | API | URL(s) del frontend autorizadas por CORS, separadas por coma. |
 
 ---
 
